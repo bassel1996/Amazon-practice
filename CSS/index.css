@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/******************************************************************** header*/
+/******************************************************************** header*/
+header{
+    display: flex;
+    background-color: rgba(19,25,33,255);
+    color: white;
+    padding: 10px 20px;
+}
+#logo{
+    width: 150px;
+}
+
+/******************************************* header_location*/
+#icon_location{
+    width: 30px;
+}
+
+#div_location{
+    margin: 0 15px;
+}
+
+/******************************************* header_search*/
+#div_search_bar{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+#input_search_bar{
+    width: 100%;
+    height: 33px;
+    border-radius: 7px 0px 0px 7px;
+    /* removes the border of the input when it has the focus*/
+    outline-width: 0;
+}
+
+#icon_search{
+    width: 25px;
+    background-color: #fcbd69;
+    padding: 6px;
+
+    border-radius: 0px 7px 7px 0px;
+    /* top left, top right, bottom right, bottom left*/
+}
+/******************************************* header_right*/
+#div_header_right{
+    display: flex;
+}
+
+/* greater than sign : direct children*/
+/* space :  children and grand children and grand....*/
+/* star sign(* asterix) :  means all the elements...*/
+#div_header_right > *{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 5px;
+}
+
+#div_authentication{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#select_language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon_cart{
+    width: 50px;
+    height: 40px;
+    margin: auto auto;
+    /* margin: auto auto centers the element horizontally and vertically*/
+}
+
+.line_2{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+
+/******************************************************************** main*/
+/******************************************************************** main*/
+main{
+    height: 100vh;
+    /* 100% of the height of the screen*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************** footer*/
+/******************************************************************** footer*/
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer_1st{
+    text-align: center;
+    background-color: #2c4854;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    cursor: pointer;
+}
+#footer_1st:hover{
+    background-color: #2c4854b4;
+}
+
+#footer_1st a{
+    text-decoration: none;
+}
+#footer_1st a:visited{
+    color: white;
+   
+}
+
+#footer_2nd{
+    display: flex;
+    /*flex is row by default*/
+    background-color: #232f3e;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+    padding: 35px 0;
+    font-size: 15px;
+}
+.footer_2nd_titles{
+    font-weight: bold;
+    font-size: 21px;
+}
+#footer_2nd li{
+    margin-bottom: 15px;
+}
+#footer_2nd ul{
+    list-style: none;
+}
+#footer_3rd{
+    display: flex;
+    background-color: #232f3e;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+#footer_3rd_language{
+    background-color: #232f3e;
+    color: white;
+    padding: 15px;
+}
+#footer_3rd_logo{
+    height: 50px;
+    margin-right: 60px;
+}
+#footer_4th_top{
+    display: flex;
+    background-color: #131a22;
+    font-size: 12px;
+    /*flex is row by default*/
+}
+#footer_4th_top a{
+    text-decoration: none;
+}
+#footer_4th_top a:visited{
+    text-decoration: none;
+    color: white;
+}
+#footer_4th_top ul {
+    list-style: none;
+    margin: 20px 15px;
+}
+
+
+#footer_4th_top_one{
+    display:flex;
+    flex-direction:row;
+}
+
+#footer_4th_top_two{
+    display:flex;
+    flex-direction:row;
+}
+#footer_4th_top{
+    display:flex;
+    flex-direction: column;
+}
+#footer_4th_title{
+    font-weight: bold;
+    font-size: 16px;
+}
+#footer_4th_bottom{
+    background-color: #131a22;
+    color: white;
+    padding: 20px 0;
+}
